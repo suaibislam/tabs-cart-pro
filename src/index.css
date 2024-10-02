@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 4rem;
+    /* height: 100vh; */
+    margin-top: 3rem;
+    margin-left: 4rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.allContent{
+    display: flex;
+    gap: 3rem;
+    /* margin-left: 6rem;
+    margin-top: 9rem; */
+}
+
+.exper{
+   /* margin: 4rem 50% auto 50%; */
+   font-size: 4rem;
+  
+   font-weight: bolder;
+   
+}
+.content{
+    /* background-color: red; */
+    width: 60rem;
+    text-align:justify;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.damo{
+  width: 40rem;
+}
+
+.job-desc{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.active-btn{
+    background-color: coral;
+}
+
+.catagory{
+    background-color: aqua;
+    padding: 2rem;
 }
